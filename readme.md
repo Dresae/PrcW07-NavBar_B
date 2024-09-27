@@ -17,109 +17,50 @@ These branches contain the style and script for the Navbar and toggle effects re
 
 Here we have combined the Navbar skeleton, style and script to create a fully functional Navbar
 ![screenshot](pics/screenshot2.png)
-
 ![screenshot](pics/screenshot3.png)
+***
+
+## Branch  QA  and Main
+
+Here we have added the testing and deployment scripts respectively
+We also slightly modified the  base color for the dark effect
+
+![screenshot](pics/screenshot4.png)
+![screenshot](pics/screenshot5.png)
 ***
 
 #  Code analysis
  
 ##  HTML File
 
-###  Summary:
-Explain how was is it structured so the reader can get a big picture of the code and how it was built. Follow a logic flow from top to bottom
-
-###  Code:
-Describe and explain from top to bottom the reason each **element** was placed in the way they are **highlighting** some important facts about **hierarchy**, **syntax** and **good practices**. 
-
-In this section maintain a **narrative style** so the reader can understand and think as the programmer.
-
-##  CSS File
-###  Code:
-
--  **Code section title 1**
->
-```css
-Put your code here exactly as it is.
-```
-
-> Use this text block to describe **relevant facts**, features or functions of your CSS code section that you consider will be useful in understanding **how the style was applied** and its relationship with the HTML code. You **highlight** some parts of this text to **improve its readability**.
+We defined a navigation bar with a search box that can be toggled on and off using the provided icons. The search box we included contains an input field and a search icon.
+Lastly we linked our base code to the script file, which is resonsible for handling the search functionality, such as toggling the search box and processing search queries.
 ***
 
--  **Code section title 2**
->
-```css
-Put your code here exactly as it is.
-```
+## css file
+1- We defined global variables for consistent design elements throughout the stylesheet
 
-> Use this text block to describe **relevant facts**, features or functions of your CSS code section that you consider will be useful in understanding **how the style was applied** and its relationship with the HTML code. You **highlight** some parts of this text to **improve its readability**.
+2- Then the basic layout and appearance of the body element, including its height and background was set.
+
+3- We continue with the dark mode effects, defining the set of styles that can be applied to the body element to switch to a dark mode theme, overriding the basic body styles.
+
+4- Lastly we styled the navigation bar, including its position, size, and background color, to create a fixed navigation bar at the top of the page.
 ***
 
--  **Code section title 3**
->
-```css
-Put your code here exactly as it is.
-```
-
-> Use this text block to describe **relevant facts**, features or functions of your CSS code section that you consider will be useful in understanding **how the style was applied** and its relationship with the HTML code. You **highlight** some parts of this text to **improve its readability**.
+## script file
+1- We first defined a function to toggle the search box on and off.
+2- Then we defined a function to handle search queries, which is called whenever the user submits a
+search query.
+3- We also defined a function to handle the dark mode toggle.
 ***
 
--  **Code section title 4**
+-  **Code section title x**
 >
 ```css
 Put your code here exactly as it is.
 ```
 
-> Use this text block to describe **relevant facts**, features or functions of your CSS code section that you consider will be useful in understanding **how the style was applied** and its relationship with the HTML code. You **highlight** some parts of this text to **improve its readability**.
-***
-
--  **Code section title 5**
->
-```css
-Put your code here exactly as it is.
-```
-> In some cases you might like to explain in a more  detailed manner each part or feature of the code stacking them as follows:
-> 
->  **property1** ; Use this space to explain how this property and/or its value affect the final appearance of a specific element and why it is not redundant but necessary.
->  **property2** ; Use this space to explain how this property and/or its value affect the final appearance of a specific element and why it is not redundant but necessary.
->  **property3** ; Use this space to explain how this property and/or its value affect the final appearance of a specific element and why it is not redundant but necessary.
->  **property4** ; Use this space to explain how this property and/or its value affect the final appearance of a specific element and why it is not redundant but necessary.
->  **property5** ; Use this space to explain how this property and/or its value affect the final appearance of a specific element and why it is not redundant but necessary.
-***
-
--  **Code section title 6**
->
-```css
-Put your code here exactly as it is.
-```
-
-> Use this text block to describe **relevant facts**, features or functions of your CSS code section that you consider will be useful in understanding **how the style was applied** and its relationship with the HTML code. You **highlight** some parts of this text to **improve its readability**.
-***
-
--  **Code section title 7**
->
-```css
-Put your code here exactly as it is.
-```
-
-> Use this text block to describe **relevant facts**, features or functions of your CSS code section that you consider will be useful in understanding **how the style was applied** and its relationship with the HTML code. You **highlight** some parts of this text to **improve its readability**.
-***
-
--  **Code section title 8**
->
-```css
-Put your code here exactly as it is.
-```
-
-> Use this text block to describe **relevant facts**, features or functions of your CSS code section that you consider will be useful in understanding **how the style was applied** and its relationship with the HTML code. You **highlight** some parts of this text to **improve its readability**.
-***
-
--  **Code section title 6**
->
-```css
-Put your code here exactly as it is.
-```
-
-> Use this text block to describe **relevant facts**, features or functions of your CSS code section that you consider will be useful in understanding **how the style was applied** and its relationship with the HTML code. You **highlight** some parts of this text to **improve its readability**.
+> Use this text block to describe **relevant facts**.
 ***
 
 ![reading...](https://media.giphy.com/media/Tf3mp01bfrrUc/giphy.gif?cid=ecf05e47wajghtrc5targr7mju7coe0avdyurnehrr1krgdt&ep=v1_gifs_search&rid=giphy.gif&ct=g "...How could I ever do so unless someone guide me?")
