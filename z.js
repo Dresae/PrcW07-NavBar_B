@@ -5,3 +5,12 @@ const body = document.querySelector("body"),
       sidebarOpen = document.querySelector(".sidebarOpen"),
       siderbarClose = document.querySelector(".siderbarClose");
 
+      let getMode = localStorage.getItem("mode");
+          if(getMode && getMode === "dark-mode"){
+            body.classList.add("dark");
+          }
+
+// js code to toggle dark and light mode
+      modeToggle.addEventListener("click" , () =>{
+        modeToggle.classList.toggle("active");
+        body.classList.toggle("dark");
