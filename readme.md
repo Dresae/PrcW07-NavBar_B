@@ -2,27 +2,27 @@
 #  Responsive Navbar
 Responsive NavBar with dark/light effect
 
-##  Branch dev1
+##  Branch 'dev1'
 
 Here we have structured the Navbar skeleton 
 ![screenshot](pics/screenshot1.png)
 ***
 
-##  Branches dev2 and dev3
+##  Branches 'dev2' and 'dev3'
 
-These branches contain the style and script for the Navbar and toggle effects respectively
+These branches contain the style and script for the Navbar and toggle events respectively.
 ***
 
-## Branch joint
+## Branch 'joint'
 
 Here we have combined the Navbar skeleton, style and script to create a fully functional Navbar
 ![screenshot](pics/screenshot2.png)
 ![screenshot](pics/screenshot3.png)
 ***
 
-## Branch  QA  and Main
+## Branch  'QA'  and 'Main'
 
-Here we have added the testing and deployment scripts respectively
+Here we have added the testing and deployment scripts respectively.
 We also slightly modified the  base color for the dark effect
 
 ![screenshot](pics/screenshot4.png)
@@ -48,19 +48,20 @@ Lastly we linked our base code to the script file, which is resonsible for handl
 ***
 
 ## script file
-1- We first defined a function to toggle the search box on and off.
-2- Then we defined a function to handle search queries, which is called whenever the user submits a
-search query.
-3- We also defined a function to handle the dark mode toggle.
-***
+This JS code is used to toggle between dark and ligth modes on a web page. It also persist the user's preferred mode even after the page refresh or file reopen using local storage.
 
--  **Code section title x**
->
-```css
-Put your code here exactly as it is.
-```
+- **Variable declaration**: We start by declaring several varaiables using **'const'** and **'let'** keywords. These variables are used to store references to HTML elements as follows: **'body'**, **'nav'**, **'modeToggle'**, **'searchToggle'**, **'sidebbarOpen'**, **'sidebarClose'** and **'getMode'**
 
-> Use this text block to describe **relevant facts**.
+- **Inittial mode setup**: The code checks if there is a store mode in the local storage using **'localStorage.getItem("mode")'**. If a mode is found and it's equal to **'dark-mode'**, the code adds the **'dark'** class to the **'<body>'** element  using **'body.classList.add("dark")'**. This set the initial mode of the page.
+
+- **Event Listener to Mode Toggle**: This code adds an event listener to the **'modeToggle'** element to listen for clicks. When the element is clicked, the following actions are performed:
+
+1- The **'active'** class is toggled on the **'modeToggle'** element using **'modeToggle.classList.toggle("active")'**.
+
+2- The **'dark'** class is toggled on the **'<body>'** element using **'body.classList.toggle("dark")'**. This toggles the dark mode on or off.
+
+3- The code also checks if the **'<body>'** element has the dark class using **'body.classList.contains("dark")'**. If it doesn't, it sets the mode to **'light-mode'** in local storage using **'localStorage.setItem("mode", "light-mode)'**. If it does, it sets the mode to **'dark.-mode'** in local storage using **'localStorage.setItem("mode, "dark-mode")'**. This ensures that the user's preferred mode is persisted even after page refresh or file reopen.
+
 ***
 
 ![reading...](https://media.giphy.com/media/Tf3mp01bfrrUc/giphy.gif?cid=ecf05e47wajghtrc5targr7mju7coe0avdyurnehrr1krgdt&ep=v1_gifs_search&rid=giphy.gif&ct=g "...How could I ever do so unless someone guide me?")
