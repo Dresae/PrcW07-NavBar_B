@@ -34,7 +34,7 @@ We also slightly modified the  base color for the dark effect
 ##  HTML File
 
 We defined a navigation bar with a search box that can be toggled on and off using the provided icons. The search box we included contains an input field and a search icon.
-Lastly we linked our base code to the script file, which is resonsible for handling the search functionality, such as toggling the search box and processing search queries.
+Lastly we linked our base code to the script file, which is responsible for handling the search functionality, such as toggling the search box and processing search queries.
 ***
 
 ## css file
@@ -50,17 +50,17 @@ Lastly we linked our base code to the script file, which is resonsible for handl
 ## script file
 This JS code is used to toggle between dark and ligth modes on a web page. It also persist the user's preferred mode even after the page refresh or file reopen using local storage.
 
-- **Variable declaration**: We start by declaring several varaiables using **'const'** and **'let'** keywords. These variables are used to store references to HTML elements as follows: **'body'**, **'nav'**, **'modeToggle'**, **'searchToggle'**, **'sidebbarOpen'**, **'sidebarClose'** and **'getMode'**
+1- **Variable declaration**: We start by declaring several variables using **'const'** and **'let'** keywords. These variables are used to store references to HTML elements as follows: **'body'**, **'nav'**, **'modeToggle'**, **'searchToggle'**, **'sidebarOpen'**, **'sidebarClose'** and **'getMode'**
 
-- **Inittial mode setup**: The code checks if there is a store mode in the local storage using **'localStorage.getItem("mode")'**. If a mode is found and it's equal to **'dark-mode'**, the code adds the **'dark'** class to the **'<body>'** element  using **'body.classList.add("dark")'**. This set the initial mode of the page.
+2- **Initial mode setup**: The code checks if there is a store mode in the local storage using **'localStorage.getItem("mode")'**. If a mode is found and it's equal to **'dark-mode'**, the code adds the **'dark'** class to the **'<body>'** element  using **'body.classList.add("dark")'**. This set the initial mode of the page.
 
-- **Event Listener to Mode Toggle**: This code adds an event listener to the **'modeToggle'** element to listen for clicks. When the element is clicked, the following actions are performed:
+3- **Event Listener to Mode Toggle**: This code adds an event listener to the **'modeToggle'** element to listen for clicks. When the element is clicked, the following actions are performed:
 
-1- The **'active'** class is toggled on the **'modeToggle'** element using **'modeToggle.classList.toggle("active")'**.
+- The **'active'** class is toggled on the **'modeToggle'** element using **'modeToggle.classList.toggle("active")'**.
 
-2- The **'dark'** class is toggled on the **'<body>'** element using **'body.classList.toggle("dark")'**. This toggles the dark mode on or off.
+- The **'dark'** class is toggled on the **'<body>'** element using **'body.classList.toggle("dark")'**. This toggles the dark mode On or Off.
 
-3- The code also checks if the **'<body>'** element has the dark class using **'body.classList.contains("dark")'**. If it doesn't, it sets the mode to **'light-mode'** in local storage using **'localStorage.setItem("mode", "light-mode)'**. If it does, it sets the mode to **'dark.-mode'** in local storage using **'localStorage.setItem("mode, "dark-mode")'**. This ensures that the user's preferred mode is persisted even after page refresh or file reopen.
+- The code also checks if the **'<body>'** element has the dark class using **'body.classList.contains("dark")'**. If it doesn't, it sets the mode to **'light-mode'** in local storage using **'localStorage.setItem("mode", "light-mode)'**. If it does, it sets the mode to **'dark.-mode'** in local storage using **'localStorage.setItem("mode, "dark-mode")'**. This ensures that the user's preferred mode is persisted even after page refresh or file reopen.
 
 ***
 
